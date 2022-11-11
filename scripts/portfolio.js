@@ -75,16 +75,37 @@ observer2.observe(midP);
 showcase.forEach(show =>{
   observer2.observe(show);
 })
+// var page=document.querySelector('.page');
+// // navbar.style.display="none";
+// midP.addEventListener('mouseover', function(e){
+//   swipe.addEventListener('mouseover',function(){
+//     navbar.style.opacity="0";
+//   })
+//   swipes.forEach((item) => {
+//     item.addEventListener('mouseover', function(){
+//       navbar.style.opacity="0";
+//     })
+//
+//   });
+//
+//
+//   navbar.style.opacity="1";
+//   navbar.classList.add("nav-scrolled-2");
+// setTimeout(function () {
+//   // navbar.classList.remove("nav-scrolled-2");
+//   navbar.style.opacity="0";
+//
+// }, 4000);
+// });
 
-
-midP.addEventListener('mousemove', function(e){
-
-  navbar.classList.add("nav-scrolled-2");
-setTimeout(function () {
-  navbar.classList.remove('nav-scrolled-2');
-}, 3000);
-});
-
+// document.body.addEventListener('mousemove', function(e){
+//   navbar.style.display="flex";
+//   navbar.classList.add("nav-scrolled-2");
+// setTimeout(function () {
+//   navbar.classList.remove('nav-scrolled-2');
+// navbar.style.display="none";
+// }, 4000);
+// });
 
 // setInterval(function(){
 //

@@ -144,9 +144,19 @@ const conts = document.querySelectorAll(".catergory");
 const about = document.querySelectorAll(".about");
 const awards = document.querySelectorAll(".main-awards-list")
 const mid = document.getElementById('middle');
-
+const backTo= document.querySelector('.top');
 const cards= document.querySelectorAll(".card");
-
+// const topObserver= new IntersectionObserver(function(mid,topObserver){
+//   entries.forEach(entry =>{
+//
+//     if(mid.isIntersecting){
+//   backTo.classList.add('active');
+//   console.log('hello!');
+// } else {
+//   backTo.classList.remove('active');
+// }
+//   })
+// });
 const observer = new IntersectionObserver(call, {
   threshold: .08,
 })
@@ -180,3 +190,4 @@ awardImg.forEach(img =>{
 awardText.forEach(text =>{
   observer.observe(text);
 })
+navObserver.observe(backTo);
