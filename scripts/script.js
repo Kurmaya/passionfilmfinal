@@ -6,7 +6,7 @@ var navbar = document.querySelector("nav");
 var rotate=document.querySelectorAll('.rotate-card');
 var awardImg=document.querySelectorAll('.award-holder .main-awards-list');
 var awardText=document.querySelectorAll('.award-text');
-var fadeInText=document.querySelectorAll('.fade-in-text h1');
+// var fadeInText=document.querySelectorAll('.fade-in-text h1');
 
 // for(let i=0;i<fadeInText.length;i++){
 //   fadeInText[i].classList.add('active');
@@ -124,8 +124,11 @@ const navObserver = new IntersectionObserver(function(entries, navObserver) {
 
     if (!entry.isIntersecting) {
       header.classList.add('nav-scrolled');
+      header.classList.add('nav-scrolled-2');
     } else {
       header.classList.remove('nav-scrolled');
+      header.classList.remove('nav-scrolled-2');
+
     }
   })
 }, homeMainOptions)
@@ -146,17 +149,7 @@ const awards = document.querySelectorAll(".main-awards-list")
 const mid = document.getElementById('middle');
 const backTo= document.querySelector('.top');
 const cards= document.querySelectorAll(".card");
-// const topObserver= new IntersectionObserver(function(mid,topObserver){
-//   entries.forEach(entry =>{
-//
-//     if(mid.isIntersecting){
-//   backTo.classList.add('active');
-//   console.log('hello!');
-// } else {
-//   backTo.classList.remove('active');
-// }
-//   })
-// });
+
 const observer = new IntersectionObserver(call, {
   threshold: .08,
 })
@@ -190,4 +183,3 @@ awardImg.forEach(img =>{
 awardText.forEach(text =>{
   observer.observe(text);
 })
-navObserver.observe(backTo);
