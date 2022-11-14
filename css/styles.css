@@ -384,7 +384,7 @@ display: inline-block;
 
   .celeb-info p {
     font-size: .9rem !important;
-    width: 98% !important;
+    width: 90% !important;
   }
 
   .celeb-info h3 {
@@ -505,9 +505,12 @@ display: inline-block;
     width: 100% !important;
   }
 
-  .test .swiper-pagination-bullet {
+  .swiper-pagination-bullet {
     display: none;
   }
+.test .swiper-button-next, .test .swiper-button-prev{
+  display: none;
+}
 
 }
 
