@@ -1254,7 +1254,9 @@ color:var(--main);
   transform: translate(-50%, -50%);
   backface-visibility: hidden;
 }
-
+.holder{
+  backface-visibility: hidden;
+}
 .holder::before {
   content: '';
   position: absolute;
