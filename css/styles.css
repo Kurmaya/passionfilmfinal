@@ -1158,6 +1158,7 @@ color:var(--main);
   border-radius: 5%;
   -webkit-transform-style: preserve-3d;
   background: white;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
 
@@ -1196,6 +1197,7 @@ color:var(--main);
 } */
 .card-content.active {
   -webkit-transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
 }
@@ -1211,6 +1213,7 @@ color:var(--main);
   padding: 5rem;
   border-radius: 5%;
   -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
   align-content: center;
@@ -1227,6 +1230,7 @@ color:var(--main);
   margin: auto;
 
   -webkit-transform: translateZ(100px);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -1239,7 +1243,9 @@ color:var(--main);
 
   background: var(--yellow);
   -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
 }
 
 .card-front::after, .card-back::after {
@@ -1252,9 +1258,11 @@ color:var(--main);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .holder{
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .holder::before {
@@ -1270,7 +1278,9 @@ color:var(--main);
   transform: translate(-50%, -50%);
   border-radius: 5%;
   mix-blend-mode:  darken;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
 }
 
 .holder::after {
@@ -1287,6 +1297,7 @@ color:var(--main);
   transform: translate(-50%, -50%);
   mix-blend-mode:  darken;
   border-radius: 5%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
 }
@@ -1311,6 +1322,7 @@ color:var(--main);
   transform: translatex(-50%);
   border-radius: 0 0 11% 11%;
   transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -1319,16 +1331,10 @@ color:var(--main);
   align-items: center;
   justify-content: center;
   -webkit-transform: rotateY(180deg);
-  /* background: var(--yellow); */
-  /* background-image: linear-gradient(#FF9551, #FAC213); */
-  /* background-image: linear-gradient(-110deg, rgba(255,0,0,.5) ,rgba(0,0,0,.6)); */
-  /* background: var(--gradient2); */
-  /* background: linear-gradient(var(--alt),#fa0001a1); */
-  /* background: var(--alt); */
-  /* background: #4eb7bd; */
-  /* background: var(--cardBack); */
+
   background: var(--gradient2Inv);
 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -1346,7 +1352,9 @@ color:var(--main);
   overflow-y: scroll !important;
   line-height: 1.2;
   /* padding:0 10px; */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
 }
 
 .card-body p {
