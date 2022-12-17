@@ -70,13 +70,18 @@ navbarItems.forEach( item => {
 
 // video play and pause on hover//
 var vids = document.querySelectorAll('.text');
-var secVid=document.querySelectorAll('.cat')
+var secVid=document.querySelectorAll('.cat');
+var flip=document.querySelectorAll('.rt-card');
 
 if(window.matchMedia("(pointer: coarse)").matches) {
     // console.log('hello');
+    flip.forEach(flip => {
+      flip.innerHTML="Tap Here";
+    })
     secVid.forEach(sec=>{
       sec.play();
     })
+
 
 }
 
@@ -154,13 +159,14 @@ const observer = new IntersectionObserver(call, {
   threshold: .08,
 })
 conts.forEach(cont => {
+
   observer.observe(cont);
 })
 
 
 observer.observe(content);
 
-observer.observe(mid);
+// observer.observe(mid);
 
 
 awards.forEach(award => {
