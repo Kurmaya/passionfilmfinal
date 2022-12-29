@@ -3,9 +3,22 @@ var navbarLinks = document.querySelector(".navbar-links");
 var navbarItems= document.querySelectorAll('.navbar-item');
 var navbar = document.querySelector("nav");
 var mid= document.getElementById("middle-p");
+var contactSocial= document.querySelectorAll('.social-media-list li');
 
+contactSocial.forEach(social => {
+  social.addEventListener('click',function(){
+    
+    window.open(social.querySelector('a').href,'_blank');
+  })
 
-
+})
+// var cta= document.getElementById('cta');
+// var expand= document.querySelector('.that');
+//
+// expand.addEventListener('click',function(){
+//   cta.classList.add('active');
+//
+// })
 
 toggleButton.addEventListener('click', function()  {
 
@@ -166,7 +179,8 @@ lightbox.addEventListener('click', e => {
   lightHolder.querySelector('iframe').src= "";
 
 })
-var hover=document.querySelector('.hover');
+// var hover=document.querySelector('.hover');
+
 // var naav= function (){
 //   navbar.classList.toggle('nav-scrolled');
 // }

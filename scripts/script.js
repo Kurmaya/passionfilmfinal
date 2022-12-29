@@ -17,12 +17,12 @@ var awardText=document.querySelectorAll('.award-text');
 //
 // }
 
-setInterval(function(){
-var container = document.getElementById('content');
-var tmp = container.innerHTML;
-container.innerHTML= tmp;
-}, 35100 // length of the whole show in milliseconds
-);
+// setInterval(function(){
+// var container = document.getElementById('content');
+// var tmp = container.innerHTML;
+// container.innerHTML= tmp;
+// }, 35100 // length of the whole show in milliseconds
+// );
 
 
 
@@ -164,7 +164,7 @@ conts.forEach(cont => {
 })
 
 
-observer.observe(content);
+// observer.observe(content);
 
 // observer.observe(mid);
 
